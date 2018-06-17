@@ -893,6 +893,9 @@ h2.title {
   font-size: 14px;
   font-weight: 400;
   color: #696763;
+  overflow: hidden;
+  height: 20px;
+  padding: 0 15px;
 }
 
 .productinfo img{
