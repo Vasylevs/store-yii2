@@ -53,7 +53,7 @@ use yii\widgets\LinkPager;
 
             <div class="col-sm-9 padding-right">
                 <div class="features_items"><!--features_items-->
-                    <h2 class="title text-center"><?= $category->name; ?></h2>
+                    <h2 class="title text-center">Поиск по запросу <em><?= Html::encode($q); ?></em></h2>
                     <?php if(!empty($products)): ?>
                         <?php $i = 0; foreach($products as $product): ?>
                             <div class="col-sm-4">
@@ -93,13 +93,13 @@ use yii\widgets\LinkPager;
                             <?php endif;?>
                         <?php endforeach;?>
                         <div class="clearfix"></div>
-                    <?php
+                        <?php
                         echo LinkPager::widget([
                             'pagination' => $pages,
                         ]);
-                    ?>
+                        ?>
                     <?php else :?>
-                        <h2>Здесь товаров пока нет...</h2>
+                        <h2>Ничего не найдено...</h2>
                     <?php endif;?>
                 </div><!--features_items-->
             </div>
