@@ -18,7 +18,7 @@ class CategoryController extends AppController
         $query = Product::find()->where(['category_id' => $id]);
         $pages = new Pagination([
             'totalCount' => $query->count(),
-            'pageSize' => 3,
+            'pageSize' => 12,
             'forcePageParam' => false,
             'pageSizeParam' => false
         ]);
